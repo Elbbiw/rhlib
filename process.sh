@@ -10,10 +10,10 @@ for f in ./json/*.json; do
     echo "Hey $url ($platform)"
     if [ $platform = "vimeo" ]
     then
-      youtube-dl https://player.vimeo.com/video/$url --referer "https://radiohead.com" -f best -o "./video/$album/%(title)s.%(ext)s" --verbose
+      yt-dlp https://player.vimeo.com/video/$url --referer "https://radiohead.com"  -o "./video/$album/%(title)s.%(ext)s" --verbose
     elif [ $platform = "youtube" ]
     then
-      youtube-dl https://www.youtube.com/watch?v=$url --referer "https://radiohead.com" -f best -o "./video/$album/%(title)s.%(ext)s" --verbose
+      yt-dlp https://www.youtube.com/watch?v=$url --referer "https://radiohead.com" -o "./video/$album/%(title)s.%(ext)s" --verbose
     fi
   done
 done
