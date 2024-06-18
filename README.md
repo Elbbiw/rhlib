@@ -1,18 +1,20 @@
 # rhlib
-Radiohead Public Library Experiments
+[Radiohead Public Library](https://www.radiohead.com/library/) Download Script
+
+Forked in June 2024 from [Andrés Gottlieb's Radiohead Public Library Experiments](https://github.com/andresgottlieb/rhlib) and fixed up to work with yt-dlp. MIT licence remains the same as upstream.
 
 ---
-## Experiment 1: Download all videos
+## Download all videos
 
 ## Works on
 1. Mac OS ✓
 2. Ubuntu ✓
-3. Windows ? (please adapt it and push a PR)
+
 
 ## Dependencies
 1. [curl](https://curl.haxx.se/download.html) (probably already present in your system)
 2. [jq](https://stedolan.github.io/jq/download/) (probably already present in your system)
-3. [youtube-dl](https://youtube-dl.org/) (make sure you have the latest version, running ```youtube-dl -U```)
+3. [yt-dlp](https://github.com/yt-dlp/yt-dlp) (make sure you have the latest version)
 
 ## Installation
 1. Install the dependencies above
@@ -30,8 +32,3 @@ Run ```get.sh```, and then ```process.sh```:
    
 ## Results
 The videos will be downloaded to the ```./video/``` folder
-
----
-
-## Experiment 2: Browse all concerts on a map
-[https://www.rhlib.com](https://www.rhlib.com)
